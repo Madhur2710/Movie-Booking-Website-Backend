@@ -6,8 +6,7 @@ dotenv.config();
 
 
 // async vs sync
-//understand this export statement
-// gets all users for that specific search ig
+
 export const getAllAdmins = async(req, res, next) => {
     let admins;
     try{
