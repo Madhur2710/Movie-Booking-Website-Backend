@@ -4,8 +4,7 @@ import Bookings from "../models/Bookings.js";
 
 
 // async vs sync
-//understand this export statement
-// gets all users for that specific search ig
+
 export const getAllUsers = async(req, res, next) => {
     let users;
     try{
@@ -32,7 +31,7 @@ export const signup = async (req, res, next) => {
     let user;
     try{
         user = new User({name, email, password : hashedPassword  });
-        user = await user.save();         // check what does await mean
+        user = await user.save();        
     } catch(err) {
         return console.log(err);
     }
